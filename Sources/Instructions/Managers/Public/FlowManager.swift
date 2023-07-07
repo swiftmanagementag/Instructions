@@ -14,11 +14,11 @@ public class FlowManager {
     private(set) open var isPaused = false
 
     internal unowned let coachMarksViewController: CoachMarksViewController
-    internal weak var dataSource: CoachMarksControllerProxyDataSource?
+    internal  var dataSource: CoachMarksControllerProxyDataSource?
 
     /// An object implementing the delegate data source protocol,
     /// which methods will be called at various points.
-    internal weak var delegate: CoachMarksControllerProxyDelegate?
+    internal var delegate: CoachMarksControllerProxyDelegate?
 
     /// Reference to the currently displayed coach mark, supplied by the `datasource`.
     internal var currentCoachMark: CoachMark?
@@ -293,11 +293,13 @@ public class FlowManager {
     }
 
     // MARK: Renamed Public Properties
-    @available(*, unavailable, renamed: "isStarted")
+    /*
+     @available(*, unavailable, renamed: "isStarted")
     public var started: Bool { return false }
 
     @available(*, unavailable, renamed: "isPaused")
     public var paused: Bool { return false }
+     */
 }
 
 extension FlowManager: CoachMarksViewControllerDelegate {

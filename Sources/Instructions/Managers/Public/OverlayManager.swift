@@ -188,6 +188,8 @@ public class OverlayManager {
     }
 
     // MARK: Renamed Public Properties
+    /*
+
     @available(*, unavailable, renamed: "backgroundColor")
     public var color: UIColor { return InstructionsColor.overlay }
 
@@ -199,6 +201,7 @@ public class OverlayManager {
 
     @available(*, unavailable, renamed: "areTouchEventsForwarded")
     public var forwardTouchEvents: Bool { return false }
+     */
 }
 
 // swiftlint:disable class_delegate_protocol

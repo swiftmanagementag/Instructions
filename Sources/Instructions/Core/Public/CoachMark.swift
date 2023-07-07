@@ -111,6 +111,7 @@ public struct CoachMark {
     }
 
     // MARK: - Renamed Properties
+    /*
     // swiftlint:disable unused_setter_value
     @available(*, unavailable, renamed: "isDisplayedOverCutoutPath")
     public var displayOverCutoutPath: Bool {
@@ -129,6 +130,7 @@ public struct CoachMark {
         get { return false }
         set {}
     }
+     */
 }
 
 extension CoachMark: Equatable {}
